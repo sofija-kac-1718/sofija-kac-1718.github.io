@@ -20,7 +20,7 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">&#9819;</a>
       
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,16 +29,19 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="https://github.com/sofijakac?tab=repositories">Github</a>
           </li>
+
+          <!--
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
           </li>
+          -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="CS160/index.html" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CS160</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CS160</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="CS160/scratch.html">SCRATCH Work</a>
               <a class="dropdown-item" href="CS160/reading.html">Reading Questions</a>
@@ -48,33 +51,27 @@
             </div>
           </li>
         </ul>
-        
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <div class="active-pink-3 active-pink-4 mb-4"></div>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     </nav>
 
-    <main role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">Screencast Recording</h1>
-
-          <!-- copy and paste. Modify height and width if desired. -->
-        <!-- copy and paste. Modify height and width if desired. -->
-        <iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html" 
-          style="overflow:hidden;" src="https://www.screencast.com/users/sofijakac/folders/Default/media/626a53c1-aa60-4a6c-98c9-5a8e88552e79/embed" height="734" width="406" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  
-        </div>  
-      </div>
-
+    <main role="main">
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Screencast Recording</h1>
+          <iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html" 
+                style="overflow:hidden;" src="https://www.screencast.com/users/sofijakac/folders/Default/media/626a53c1-aa60-4a6c-98c9-5a8e88552e79/embed" height="734" width="406" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>  
+      </div> 
     </main>
 
     <footer class="container">
-      <p>&copy; COCC 2019-2020</p>
+      <p style="color:whitesmoke;">&copy; COCC 2019-2020</p>
     </footer>
 
     <!-- Bootstrap core JavaScript

@@ -1,13 +1,21 @@
-function setup() {
-  createCanvas(480, 120);
-}
+let x = 2;
+let y = 1;
+let easing = 0.25;
 
+function setup() {
+  createCanvas(720, 400);
+  noStroke();
+}
+// altered an example from p5.js reference site
 function draw() {
-  background(204);
-  ellipse(75, 60, 90, 90);
-  strokeWeight(8);  // Stroke weight to 8 pixels
-  ellipse(175, 60, 90, 90);
-  ellipse(279, 60, 90, 90);
-  strokeWeight(20);  // Stroke weight to 20 pixels
-  ellipse(389, 60, 90, 90);
+  background(128, 34, 93);
+  let targetX = mouseX;
+  let dx = targetX - x;
+  x += dx * easing;
+
+  let targetY = mouseY;
+  let dy = targetY - y;
+  y += dy * easing;
+
+  square(x, y, 66, 66);
 }

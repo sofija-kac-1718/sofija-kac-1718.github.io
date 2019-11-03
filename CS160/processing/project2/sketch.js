@@ -1,12 +1,16 @@
 function setup() {
-  createCanvas(500,500);
+  createCanvas(710, 400);
+  background(102);
 }
 
 function draw() {
-  if (mousePresses){
-    fill(0)
-  } else {
-    fill(255);
-  }
-  ellipse(mouseX, mouseY, 80, 80)
+  variableEllipse(mouseX, mouseY, pmouseX, pmouseY);
+  from = color(255, 0, 0, 0.2 * 255);
+}
+
+function variableEllipse(x, y, px, py) {
+  let speed = abs(x - px) + abs(y - py);
+  stroke(speed);
+  
+  ellipse(x, y, speed, speed);
 }
